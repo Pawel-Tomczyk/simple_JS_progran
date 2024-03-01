@@ -1,0 +1,117 @@
+:root {
+  --dark-blue: #070a52;
+  --red: #d21312;
+  --pastele: #ed2b2a;
+  --rouge: #f15a59;
+}
+
+body {
+  background-color: var(--dark-blue);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+div {
+  display: flex;
+  align-self: top;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  /* FONT */
+  font-size: 6vh;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+
+  /* SIZE */
+  padding: 1vh;
+  background-color: inherit;
+  border-color: inherit;
+  border-style: var(--rouge);
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  font-size: 5.9vh;
+}
+
+#top {
+  background-color: var(--rouge);
+  height: 10vh;
+  border-radius: 0px 0px 10px 10px;
+  padding: 1vh;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+#mid {
+  /* background-color: var(--pastele); */
+  height: 90vh;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.tour {
+  background-color: #d21312;
+  width: 30vh;
+
+  border-color: var(--rouge);
+  border-style: none solid;
+  border-width: 1vh;
+
+  justify-content: center;
+  font-size: 15vh;
+  padding-top: 0px;
+
+  -webkit-user-select: none; /* Dla przeglądarek opartych na silniku WebKit, np. Chrome, Safari */
+  -moz-user-select: none; /* Dla przeglądarek opartych na silniku Gecko, np. Firefox */
+  -ms-user-select: none; /* Dla przeglądarek opartych na silniku Trident, np. Internet Explorer */
+  user-select: none; /* Standardowa właściwość */
+
+  transition: padding 0.3s ease;
+}
+
+#r-car {
+  border-color: black var(--rouge) black black;
+}
+
+#y-car {
+  border-color: black black black var(--rouge);
+}
+
+#overlay {
+  font-size: 6vh;
+  font-family: "Honk", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "MORF" 15, "SHLN" 50;
+
+  position: fixed; /* Ustawienie pozycji na stałe w oknie przeglądarki */
+  top: 25vh; /* Odległość od góry okna przeglądarki */
+  left: 25vw; /* Odległość od lewej strony okna przeglądarki */
+  width: 50vw; /* Szerokość na całe okno przeglądarki */
+  height: 50vh; /* Wysokość na całe okno przeglądarki */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Kolor tła z przezroczystością, aby uzyskać efekt nakładki */
+  z-index: 9999; /* Wysoki indeks warstwy, aby element był na wierzchu */
+
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  visibility: hidden;
+}

@@ -1,0 +1,9 @@
+diplay: flex; - zmienia w flex boxa
+justify-content: ...; - ustawnia w osi x
+align-items: ...; - ustawia w osi y
+flex-direction: ...; - ustawia czy chcesz żeby itemy były w rzędzie, w kolumnie, albo można wgl dzięki temu obrócić w inną kolejność
+                        warto zaznaczyć że zmienia tak naprawdę kiedunek, więc justify-content i align-items mogą zmienić właściwości
+order: (np. -2, -1, 0, 1, 2); - zmienia kolejność itemów
+align-self: ...; - robi to samo co algin items, tylko że na itemie, a nie w boxie;
+flex-wrap: ...; - jeśli itemsy za duże, przesuwa na następną linie
+flex-flow: ... ...; - łączy flex-direction i flex-wrap
